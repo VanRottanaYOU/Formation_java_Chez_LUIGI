@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Chez_LUIGI</display-name>
+  <servlet>
+		<servlet-name>Menu</servlet-name>
+		<servlet-class>com.servlets.Menu</servlet-class>		
+		<load-on-startup>1</load-on-startup>
+   </servlet>
+ 	
+ 	<servlet>
+		<servlet-name>AfficherListePizzas</servlet-name>
+		<servlet-class>com.servlets.AfficherListePizzas</servlet-class>
+   </servlet>
+   <servlet>
+		<servlet-name>CreerPizza</servlet-name>
+		<servlet-class>com.servlets.CreerPizza</servlet-class>
+   </servlet>
+   <servlet>
+		<servlet-name>MiseaJourPizza</servlet-name>
+		<servlet-class>com.servlets.MiseaJourPizza</servlet-class>
+   </servlet>
+   <servlet>
+		<servlet-name>SupprimerPizza</servlet-name>
+		<servlet-class>com.servlets.SupprimerPizza</servlet-class>
+   </servlet>
+   <servlet>
+		<servlet-name>Sortie</servlet-name>
+		<servlet-class>com.servlets.Sortie</servlet-class>
+   </servlet>
+   
+	<servlet-mapping>
+		<servlet-name>AfficherListePizzas</servlet-name>
+		<url-pattern>/afficherListePizzas</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Menu</servlet-name>
+		<url-pattern>/menu</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CreerPizza</servlet-name>
+		<url-pattern>/creerPizza</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MiseaJourPizza</servlet-name>
+		<url-pattern>/miseaJourPizza</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SupprimerPizza</servlet-name>
+		<url-pattern>/supprimerPizza</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Sortie</servlet-name>
+		<url-pattern>/sortie</url-pattern>
+	</servlet-mapping>
+</web-app>
